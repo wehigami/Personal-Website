@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <p id="logo">logo</p>
+        <h1>wehigami</h1>
+        <ul>
+            <li><a href="pages/Commands.html" id="commandsLink">Commands List</a></li>
+            <li><a href="index.html" id="randomLink">Main Page</a></li>
+            <li><a href="pages/Contact.html" id="contactLink">Contact Me</a></li>
+        </ul>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=796021170318475275&permissions=8&scope=bot"><button
+                id="inviteButton">Invite Shinigami</button></a>
+        <img src="imgs/bannerblurred.jpg" alt="banner" id="banner" class="banner" data-speed="-2">
+    </nav>
+    <header class="bg" id="bg" data-speed="-4">
+        <h1>Shinigami</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mattis malesuada. <br> Praesent
+            ac diam sit amet felis facilisis bibendum. Donec pellentesque mollis dui tincidunt porttitor. <br> Curabitur
+            porttitor nibh eu auctor sodales. Integer semper, mi non tempus vestibulum, <br> metus dolor consequat
+            purus, at convallis lorem odio eget eros. Donec pharetra mauris et lectus auctor, <br> nec scelerisque magna
+            eleifend. Cras ut augue ac ipsum hendrerit luctus. Nunc eleifend sagittis diam sed dignissim. </h2>
+    </header>
+    <div class="contDiv">
+    </div>
+    <div class="insideContDiv">div</div>
+    <footer>footer</footer>
+    <script type="text/javascript">
+        document.addEventListener('mousemove', parallax);
+        function parallax(e){
+            this.querySelectorAll('.banner').forEach(fg => {
+                let speed = fg.getAttribute('data-speed')
+                let x = (window.innerWidth - e.pageX * speed)/100
+                let y = (window.innerWidth - e.pageY * speed)/100
+                fg.style.transform = `translateX(${x}px)
+                translateY(${y}px)`
+            })
+        }
+    </script>
+</body>
+
+</html>
