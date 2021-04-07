@@ -1,0 +1,79 @@
+.bgDiv1 {
+    display: none;
+    position: fixed;
+    top: 0px;
+    background-color: #202225;
+    width: 83.5vw;
+    height: 100vh;
+    z-index: 11;
+    opacity: 80%;
+}
+
+.bgDiv {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #202225;
+    width: 100vw;
+    height: 100vh;
+    z-index: 8;
+    opacity: 50%;
+}
+.popUp {
+    background-image: url(../imgs/webProjCl.png);
+    background-position-x: 350px;
+    background-repeat: no-repeat;
+    background-size: 125%;
+    display: none;
+    position: fixed;
+    height: 600px;
+    width: 50%;
+    top: 7%;
+    left: 25%;
+    color: white;
+    font-weight: 1000;
+    background-color: #121314;
+    z-index: 9;
+}
+.popUp p {
+    display: none;
+    position: relative;
+    font-size: 22px;
+    width: 310px;
+    top: 10px;
+    left: 20px;
+
+}
+.project {
+    line-height: 6;
+    font-size: 50px;
+    text-align: center;
+    border: solid #202225 2px;
+    position: relative;
+    left: 10%;
+    top: 75px;
+    margin: 50px 25px;
+    height: 350px;
+    width: 450px;
+    display: inline-block;
+    font-weight: 1000;
+    color: white;
+    background-color: #202225;
+    text-shadow: 2px 2px #202225;
+}
+
+#panel1 {
+    background-image: url(../imgs/webProj.png);
+    background-size: 130%;
+}
+
+#panel2 {
+    background-image: url(../imgs/botProj.png);
+    background-size: 100%;
+}
+
+#panel3 {
+    background-image: url(../imgs/minecraftProj.png);
+    background-size: 150%;
+}
+

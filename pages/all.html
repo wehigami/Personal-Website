@@ -5,36 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allProjsStyles.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="../scripts.js"></script>
     <title>🌃All Projects🌙</title>
 </head>
 
 <body>
+
     <nav>
         <a href="../index.html"><img src="../imgs/pfp.jpg" alt="logo" id="logo"></a>
         <a href="../index.html" id="name">wehigami</a>
-        <a href="all.html"><button>All projects</button></a>
+        <div class="container" onclick="hambarAnim(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </nav>
-    <div>
-        <h1>All projects</h1>
+    <div class="navMenu">
+        <a href="../pages/all.html"><div class="navMenuElem" id="firstElem" data-elemid="rstElem"><p>All Projects</p></div></a>
+        <a href="../https://github.com/wehigami"><div class="navMenuElem"><p>Github</p></div></a>
+        <a href="../pages/contact.html"><div class="navMenuElem"><p>Contact Info</p></div></a>
+        <a href="../pages/currentWip.html"><div class="navMenuElem"><p>About Me</p></div></a>
+    </div>
+
+
+    <div class="project inuse" data-panelid='panel1' id="panel1">Website</div>
+    <div class="project inuse" data-panelid='panel2' id="panel2">Discord Bot</div>
+    <div class="project inuse" data-panelid='panel3' id="panel3">Minecraft Plugin Dev</div>
+    <div class="project" data-panelid='panel4' id="panel4">Coming Soon</div>
+    <div class="project" data-panelid='panel5' id="panel5">Coming Soon</div>
+    <div class="project" data-panelid='panel6' id="panel6">Coming Soon</div>
+    <div class="bgDiv"></div>
+    <div class="popUp">
+        <p id="popuptxt1">This is my personal website project. You can find a bunch of useful info about me here, I also made this so <br><br> I can get more experience with setting up a working website. <br> Work in Progress.</p>
+        <p id="popuptxt2">I'm working on a discord bot in the meantime. It isn't very advanced and for the most part doesn't do much, but I learned a lot about javascript thanks to developing it. Even though it's not that useful it can still come in handy, for example when you want to check your Leage of Legends MMR, play music or pick a random number. <br><br> You can check it out on my github!</p>
+        <p id="popuptxt3">Whenever needed I make custom plugins for the server me and my friends play on. For the most part they are simple and hard coded but I mostly do it to learn Java anyway. <br><br> You can check the code out on my github!</p>
     </div>
     <footer>
         <img src="../imgs/bird.png" alt="birdImg" id="birdImg">
         <ul>
-            <a href="https://github.com/wehigami"><li>Github</li></a>
-            <a href=""><li>Something</li></a>
+            <a href="https://github.com/wehigami">
+                <li>Github</li>
+            </a>
+            <a href="">
+                <li>Something</li>
+            </a>
         </ul>
         <ul>
-            <a href="contact.html"><li>Contact Info</li></a>
-            <a href="aboutMe.html"><li>About Me</li></a>
+            <a href="contact.html">
+                <li>Contact Info</li>
+            </a>
+            <a href="aboutMe.html">
+                <li>About Me</li>
+            </a>
         </ul>
-        <h2 id="firstFH">The artwork you see on this webpage is not mine! You can find info where to find the creators down below.</h2>
+        <h2 id="firstFH">The artwork you see on this webpage is not mine! You can find info where to find the creators
+            down below.</h2>
         <h2> If you are one of the author and want your work removed please contact me!</h2>
-        <a href="https://www.youtube.com/channel/UCNniOEG8YSQ3TMyP5kPUvMQ" id="artist1"><h3>Inspired Island</a> Wonder Egg Priority</h3>
+        <a href="https://www.youtube.com/channel/UCNniOEG8YSQ3TMyP5kPUvMQ" id="artist1">
+            <h3>Inspired Island
+        </a> Wonder Egg Priority</h3>
 
     </footer>
+    <div class="bgDiv1"></div>
 </body>
 
 </html>
